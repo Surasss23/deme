@@ -1,13 +1,28 @@
-<hrml>
+<!DOCTYPE html>
+<html>
 <head>
-<title> Suraj Phone </title>
+    <title>Suraj Phone</title>
+    <script 
+        type="module" 
+        src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js">
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+        }
+        spline-viewer {
+            width: 100%;
+            height: 100vh;
+            display: block;
+        }
+    </style>
 </head>
-<body style="margine:0;
-background:#000;">
-<iframe
-src="https://prod.spline.design/JzD3msQ3g-2CYwIi/scene.splinecode" width="100% Height="100%"
-frameborder="0"></iframe>
+<body>
+    <spline-viewer 
+        url="https://prod.spline.design/JzD3msQ3g-2CYwIi/scene.splinecode"
+        loading-anim
+        hide-ui
+    ></spline-viewer>
 </body>
 </html>
-
-
